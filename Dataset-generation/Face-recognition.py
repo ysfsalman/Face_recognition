@@ -1,4 +1,13 @@
-# code to collect initial dataset for face recognition training
+# Code to collect facial dataset for face recognition training
+# To feed the facial dataset to DL model, the program will acquire the dataset through following steps: 
+#   1. Get the frame/image from webcam streaming
+#   2. Gray the image
+#   3. Detect face area by detection model from grayed image
+#   4. Save and cropped face from image
+#   5. (optional) show preview
+#
+# nb: some codes are collected from several sources
+# ---------------------------------------------------------------------------------------------------------
 
 import cv2
 
@@ -51,3 +60,4 @@ while rval:
         break
 
 cv2.destroyWindow("preview")
+
